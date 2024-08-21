@@ -14,7 +14,7 @@ For my Windows machine, running this locally with the sample data looks like: "p
 
 There's a test case using the sample data with the default unittest module, running that locally looks like: "py -m unittest"
 
-Mostly I just tested the program with the sample data under the test folder for the sake of time.
+Mostly I just tested the program with the sample data under the test folder for the sake of time. I structured those sample files the same way as the examples shown in the email.
 
 # Improvements
 I'm also storing the outputs in memory which shouldn't be an issue for outputs of this size, but something to consider in the future if they ever get too big to store in memory (hopefully not for logs).
