@@ -28,4 +28,4 @@ Everything is being done in native Python, but assuming the flow logs are alread
 # Future Scalability
 The main bottleneck for this is volume, assuming the 10 MB cap for the log still holds. If this were to be productionized, I would like the upstream service to send these logs through a message broker like Kafka or Pub/Sub, and process them in batches/micro-batches depending on the volume of the logs. If it was an API endpoint instead for pushing the logs, it can be rate-limited. I don't think these aggregations need real-time streaming which makes it easier to manage and scale. In any case, we could push this to an proper ETL pipeline if needed for scalability.
 
-I've chose this project structure for this framework with the intention of keeping it modular and making future maintainability and enhancements easy. From what I've seen, a similar structure tends to be relatively commonplace.
+I've chosen this project structure for this framework with the intention of keeping it modular and making future maintainability and enhancements easy. It's a similar structure to other frameworks I've seen and contributed in.
