@@ -4,8 +4,7 @@
  1. Logs are in .txt format and lookup table is in .csv
  2. Records are structured in a way that all defined columns have a value (including NULL)
  3. Flow logs follow the default version 2 format as documented in AWS and follow the same structure as the examples provided in the email
- 4. Input logs and lookup table files are assumed to be mostly validated already, so I'm not doing many quality checks when parsing them.
-    4+. To elaborate, this is also assuming records within both files are standardized, so dstport will always be a number, and all the records in the log file will follow the same structure and positions even though it's a txt file
+ 4. Input logs and lookup table files are assumed to be mostly validated already, so I'm not doing many quality checks when parsing them. To elaborate, this is also assuming records within both files are standardized, so dstport will always be a number, and all the records in the log file will follow the same structure and positions even though it's a txt file
 
 # Running the Program
 No external libraries are used. There are two positional arguments, the first is the path to the sample flow log and the second is the path to the lookup table. There's a sample input log and a sample lookup table under /test/sample_data.
